@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Pizzaria SM</h1>
+        <nav>
+            <a href="#">PT | EN</a>
+            <a href="#">MENU</a>
+            <a href="#">PROMOÇÕES</a>
+            <a href="#">PIZZA DA SORTE</a>
+            <a href="#" class="more">SM'S MORE</a>
+            <a href="#" class="encomendas">ENCOMENDAR AGORA</a>
+        </nav>
+    </header>
+    <main>
+        <section id="background">
+
+        </section>
+        <h1>PIZZAS</h1>
+        <section class="fila1">
+            <div>
+                <img src="img/pizzapepperoni.png" alt="pepperoni" style="width: 50%;" class="pepperoni">
+                <p class="pizzas">Pizza Pepperoni</p>
+                <button>Comprar</button>
+            </div>
+            <div>
+                <img src="img/pizzamexicana500.png" alt="mexicana" style="width: 65%;" class="mexicana">
+                <p class="pizzas">Pizza Mexicana</p>
+                <button>Comprar</button>
+            </div>
+            <div>
+                <img src="img/pizzavegetariana500.png" alt="vegetariana" style="width: 50%;" class="vegetariana">
+                <p class="pizzas">Pizza Vegetariana</p>
+                <button>Comprar</button>
+            </div>
+        </section>
+        <section class="fila2">
+            <div>
+                <img src="img/pizzamargherita500.png" alt="margherita" style="width: 57%;" class="margherita"> 
+                <p class="pizzas">Pizza Margherita</p>
+                <button>Comprar</button>
+            </div>
+            <div>
+                <img src="img/pizzamushroom500.png" alt="mushroom" style="width: 50%;" class="mushroom">
+                <p class="pizzas">Pizza Mushroom</p>
+                <button>Comprar</button>
+            </div>
+            <div>
+                <img src="img/pizzahawaiian500.png" alt="hawaiian" style="width: 50%;" class="hawaiian">
+                <p class="pizzas">Pizza Hawaiian</p>
+                <button>Comprar</button>
+            </div>
+        </section>
+        <section class="contactos">
+                <aside class="localidade">
+                    <h2>Localização</h2>
+                    <p>Avenida Beira Mar - Gaia</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1782.4355543263625!2d-8.667027707417452!3d41.12815117350715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-PT!2spt!4v1758577204704!5m2!1spt-PT!2spt" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">                        
+                    </iframe>
+                </aside>
+     
+                <aside class="formulario">
+                    <h2>Reclamações</h2> <br>
+                    <form action="cadastro.php" method="get" autocomplete="on">
+                        <p>
+                            <label for="inome">Nome:</label>
+                            <input type="text" name="nome" id="inome" minlength="5" maxlength="20">
+                        </p> <br>
+                        <p>
+                            <label for="iemail">Gmail:</label>
+                            <input type="email" name="mail" id="iemail">
+                        </p> <br>
+                        <p>
+                            <label for="irecl">Reclamação:</label> <br>
+                            <textarea name="reclamação" id="irecl" style="width: 300px; height: 300px;"></textarea>
+                        </p>
+                    </form>
+                </aside> 
+        </section>
+    </main>
+    <footer>
+        <p>Site Desenvolvido por <a href="https://github.com/GuilhermeGSFerreira">Guilherme Ferreira</a></p>
+    </footer>
+</body>
+</html>

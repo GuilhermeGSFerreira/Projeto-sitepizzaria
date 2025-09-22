@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root{
+    --cor01: #1783B5;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    background-image: linear-gradient(to top, #170301, #812301);
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header > h1{
+    padding: 10px;
+}
+
+nav{
+    padding: 10px;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.more{
+    background-color: #1783B5;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px #1055757e;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.encomendas{
+    background-color: #E2344D;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px #811f2e79;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+main{
+    background-color: white;
+}
+
+main > h1{
+    text-align: center;
+    font-size: 4em;
+    padding-top: 10vh;
+}
+
+#background{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/pizza.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.pizzas{
+    font-size: 2em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fila1{
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pepperoni{
+    padding: 20px;
+    display: flex;
+    margin: auto;
+}
+
+.mexicana{
+    padding: 33px;
+    display: flex;
+    margin: auto;
+}
+
+.vegetariana{
+    padding: 15px;
+    display: flex;
+    margin: auto;
+}
+
+.fila2{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.margherita{
+    padding: 27px;
+    display: flex;
+    margin: auto;
+}
+
+.mushroom{
+    padding: 15px;
+    display: flex;
+    margin: auto;
+}
+
+.hawaiian{
+    padding: 15px;
+    display: flex;
+    margin: auto;
+}
+
+div{
+    background-color: #1C0402;
+    color: white;
+    border-radius: 10px;
+    width: 350px;
+    height: 450px;
+    box-shadow: 2px 2px 2px #1c04027e;
+}
+
+
+button{
+    font-family: "Open Sans", sans-serif;
+    border-radius: 10px;
+    color: white;
+    border-color: #1783B5;
+    padding: 10px;
+    background-color: var(--cor01);
+    cursor: pointer;
+    display: flex;
+    margin: 10vh auto ;
+    
+}
+
+.contactos{
+    background-color: rgba(128, 128, 128, 0.096);
+    margin-top: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.localidade{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.localidade > h2{
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+.localidade > p{
+    padding-bottom: 1vw;
+}
+
+.formulario{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer{
+    font-family: "Open Sans", sans-serif;
+    background-image: linear-gradient(to bottom, #170301, #812301);
+    padding: 10px;
+    margin-top: 5vh;
+    color: white;
+    text-align: center;
+}
+
+footer > p > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
+}
