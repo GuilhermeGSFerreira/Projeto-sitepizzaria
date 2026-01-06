@@ -13,50 +13,83 @@
             <a href="#">PT | EN</a>
             <a href="#">MENU</a>
             <a href="#">PROMOÇÕES</a>
-            <a href="#">PIZZA DA SORTE</a>
+            <a href="#" id="pizza-sorte-link">PIZZAS</a>
             <a href="#" class="more">SM'S MORE</a>
             <a href="#" class="encomendas">ENCOMENDAR AGORA</a>
         </nav>
     </header>
     <main>
-        <section id="background">
-
+        <section 
+            id="background">
         </section>
         <h1>PIZZAS</h1>
         <section class="fila1">
+
             <div>
                 <img src="img/pizzapepperoni.png" alt="pepperoni" style="width: 50%;" class="pepperoni">
                 <p class="pizzas">Pizza Pepperoni</p>
-                <button>Comprar</button>
+                <p class="preco">10 euros</p>
+                <button class="btn-comprar" onclick="botoescomprar()">Comprar</button>
             </div>
+
             <div>
                 <img src="img/pizzamexicana500.png" alt="mexicana" style="width: 65%;" class="mexicana">
                 <p class="pizzas">Pizza Mexicana</p>
-                <button>Comprar</button>
+                <p class="preco">7.5 euros</p>
+                <button class="btn-comprar" onclick="botoescomprar()">Comprar</button>
             </div>
+
             <div>
                 <img src="img/pizzavegetariana500.png" alt="vegetariana" style="width: 50%;" class="vegetariana">
                 <p class="pizzas">Pizza Vegetariana</p>
-                <button>Comprar</button>
+                <p class="preco">8 euros</p>
+                <button class="btn-comprar" onclick="botoescomprar()">Comprar</button>
             </div>
+
         </section>
+
         <section class="fila2">
+
             <div>
                 <img src="img/pizzamargherita500.png" alt="margherita" style="width: 57%;" class="margherita"> 
                 <p class="pizzas">Pizza Margherita</p>
-                <button>Comprar</button>
+                <p class="preco">9.5 euros</p>
+                <button class="btn-comprar" onclick="botoescomprar()">Comprar</button>
             </div>
+
             <div>
                 <img src="img/pizzamushroom500.png" alt="mushroom" style="width: 50%;" class="mushroom">
                 <p class="pizzas">Pizza Mushroom</p>
-                <button>Comprar</button>
+                <p class="preco">10 euros</p>
+                <button class="btn-comprar" onclick="botoescomprar()">Comprar</button>
             </div>
+
             <div>
                 <img src="img/pizzahawaiian500.png" alt="hawaiian" style="width: 50%;" class="hawaiian">
                 <p class="pizzas">Pizza Hawaiian</p>
-                <button>Comprar</button>
+                <p class="preco">12 euros</p>
+                <button class="btn-comprar" onclick="botoescomprar()">Comprar</button>
             </div>
+
         </section>
+
+        <section id="pizza-da-sorte" class="sorte-escondida">
+            <h2>🍀 Pizzas 🍕</h2>
+            <div   
+                class="pizzas-sorte-container">
+            </div>
+            <button class="fechar-sorte" onclick="fecharPizzaSorte()">Fechar ✖</button>
+        </section>
+        
+        <section id="carrinho">
+                <button class="fechar-carrinho" onclick="document.getElementById('carrinho').classList.remove('ativo')">✖</button>
+                <h2>Carrinho de Compras</h2>
+                <ul id="lista-carrinho"></ul>
+                <p id="total-carrinho">Total: 0 itens</p>
+                <button class="btn-finalizar">asasaFinalizar Compra</button>
+        
+        </section>
+
         <section class="contactos">
                 <aside class="localidade">
                     <h2>Localização</h2>
@@ -70,15 +103,15 @@
                     <form action="cadastro.php" method="get" autocomplete="on">
                         <p>
                             <label for="inome">Nome:</label>
-                            <input type="text" name="nome" id="inome" minlength="5" maxlength="20">
+                            <input type="text" name="nome" id="inome" minlength="5" maxlength="20" placeholder="Nome">
                         </p> <br>
                         <p>
                             <label for="iemail">Gmail:</label>
-                            <input type="email" name="mail" id="iemail">
+                            <input type="email" name="mail" id="iemail" placeholder="Gmail">
                         </p> <br>
                         <p>
                             <label for="irecl">Reclamação:</label> <br>
-                            <textarea name="reclamação" id="irecl" style="width: 300px; height: 300px;"></textarea>
+                            <textarea name="reclamação" id="irecl" style="width: 300px; height: 300px;" placeholder="Mensagem"></textarea>
                         </p>
                         <p>
                             <input type="submit" value="Enviar">
@@ -91,5 +124,8 @@
     <footer>
         <p>Site Desenvolvido por <a href="https://github.com/GuilhermeGSFerreira">Guilherme Ferreira</a></p>
     </footer>
+
+    <script src="script/script.js"></script>
 </body>
-</html>
+</html> 
+

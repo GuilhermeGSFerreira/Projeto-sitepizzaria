@@ -88,6 +88,12 @@ main > h1{
     text-align: center;
 }
 
+.preco{
+    font-size: 2em;
+    margin-top: 20px;
+    text-align: center;
+}
+
 .fila1{
     justify-content: center;
     align-items: center;
@@ -161,9 +167,160 @@ button{
     
 }
 
+#pizza-da-sorte {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1000px;
+  max-height: 80vh; 
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  z-index: 2000;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto; 
+  overscroll-behavior: contain; 
+}
+
+#pizza-da-sorte.mostrar {
+  display: flex;
+}
+
+#pizza-da-sorte h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pizzas-sorte-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#pizza-da-sorte .fechar-sorte {
+  background-color: #E2344D;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#pizza-da-sorte .fechar-sorte:hover {
+  background-color: #a91b30;
+}
+
+
+#carrinho {
+  position: fixed;
+  top: 0;
+  right: -340px;
+  width: 320px;
+  height: 100%;
+  background-color: #1C0402;
+  color: white;
+  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+}
+
+#carrinho.ativo {
+  right: 0;
+}
+
+#carrinho h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#carrinho h2::before {
+  content: "🛒";
+}
+
+.fechar-carrinho {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.fechar-carrinho:hover {
+  transform: scale(1.2);
+  color: #E2344D;
+}
+
+#lista-carrinho {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #2e0a07;
+  border-radius: 8px;
+  list-style-type: none;
+  max-height: 60vh;
+}
+
+#lista-carrinho li {
+  margin-bottom: 10px;
+  padding: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#total-carrinho {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #E2344D;
+}
+
+.btn-finalizar {
+  background-color: #1783B5;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-finalizar:hover {
+  background-color: #12668c;
+}
+
+#carrinho .fechar-carrinho {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
 .contactos{
     background-color: rgba(128, 128, 128, 0.096);
-    margin-top: 20vh;
+    margin-top: 10vh;
     display: flex;
     justify-content: space-evenly;
 }
